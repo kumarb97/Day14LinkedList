@@ -1,5 +1,5 @@
-/**UC5 : PROBLEM STATEMENT
- * Ability to delete first element
+/**UC6 : PROBLEM STATEMENT
+ * Ability to delete last node
  * 
  */
 package linkedlist;
@@ -27,6 +27,7 @@ public class LinkedListMain {
 		System.out.println("Enter 2 to add the data at the end");
 		System.out.println("Enter 3 to add the data in between");
 		System.out.println("Enter 4 to delete data of first node");
+		System.out.println("Enter 5 to delete data of last node");
 		switch (scanner.nextInt()) {
 		case 1:
 			Operations.addDataAtStart();
@@ -40,7 +41,9 @@ public class LinkedListMain {
 		case 4:
 			Operations.deleteFirstNode();
 			break;
-		}
+		case 5:
+			Operations.deleteLastNode();
+			break;}
         scanner.close();
 	}
 
