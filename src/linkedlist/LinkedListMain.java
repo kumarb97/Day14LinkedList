@@ -1,5 +1,5 @@
-/**UC6 : PROBLEM STATEMENT
- * Ability to delete last node
+/**UC7 : PROBLEM STATEMENT
+ * Ability to search LinkedList to find Node with value 30 - Write Junit Test Case as demonstrated in class - Loop through LinkedList to find node with key 30 
  * 
  */
 package linkedlist;
@@ -16,7 +16,7 @@ public class LinkedListMain {
 	/*
 	 * PROCEDURE-
 	 * 1. Operations needs to be performed (using switch case)
-	 * 2. Taking input and operation is performed (to delete first element)
+	 * 2. Taking input and operation is performed.
 	 * 3. Printing linkedList
 	 * 
 	 */
@@ -28,6 +28,7 @@ public class LinkedListMain {
 		System.out.println("Enter 3 to add the data in between");
 		System.out.println("Enter 4 to delete data of first node");
 		System.out.println("Enter 5 to delete data of last node");
+		System.out.println("Enter 6 to find index number,node with value 30 in linked list");
 		switch (scanner.nextInt()) {
 		case 1:
 			Operations.addDataAtStart();
@@ -43,7 +44,11 @@ public class LinkedListMain {
 			break;
 		case 5:
 			Operations.deleteLastNode();
-			break;}
+			break;
+		case 6:
+			Operations.findNodeBasedOnValue();
+			break;
+			}
         scanner.close();
 	}
 
