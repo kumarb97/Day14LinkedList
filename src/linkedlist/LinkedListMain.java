@@ -1,5 +1,5 @@
-/**UC4 : PROBLEM STATEMENT
- * Lets create a simple Linked List of 56, 30 and 70 Add in between.
+/**UC5 : PROBLEM STATEMENT
+ * Ability to delete first element
  * 
  */
 package linkedlist;
@@ -16,7 +16,7 @@ public class LinkedListMain {
 	/*
 	 * PROCEDURE-
 	 * 1. Operations needs to be performed (using switch case)
-	 * 2. Taking input and operation is performed (Adding nodes in between)
+	 * 2. Taking input and operation is performed (to delete first element)
 	 * 3. Printing linkedList
 	 * 
 	 */
@@ -26,6 +26,7 @@ public class LinkedListMain {
 		System.out.println("Enter 1 to add the data at the start");
 		System.out.println("Enter 2 to add the data at the end");
 		System.out.println("Enter 3 to add the data in between");
+		System.out.println("Enter 4 to delete data of first node");
 		switch (scanner.nextInt()) {
 		case 1:
 			Operations.addDataAtStart();
@@ -35,6 +36,9 @@ public class LinkedListMain {
 			break;	
 		case 3:
 			Operations.insertInBetween();
+			break;
+		case 4:
+			Operations.deleteFirstNode();
 			break;
 		}
         scanner.close();

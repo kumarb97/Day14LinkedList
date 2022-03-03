@@ -40,6 +40,15 @@ public class Operations {
 		linkedList.print();
 
 	}
+	/*
+	 * Method deleteFirstNode - deletes the first node..
+	 * 
+	 */
+	public static void deleteFirstNode() {
+		LinkedList linkedList = addDataAtStart();
+		linkedList.pop();
+		linkedList.print();
+	}
 	
 
 
