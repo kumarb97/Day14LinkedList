@@ -75,6 +75,16 @@ public class Operations {
 		System.out.println("After");
 		linkedList.print();
 	}
+	/*
+	 * Method deleteAfterNodeAfterSearchNode.
+	 */
+	public static void deleteAfterNodeAfterSearchNode() {
+		System.out.println("Before");
+		LinkedList linkedList = insertAfterSearchNode();
+		System.out.println("after");
+		linkedList.deleteANode(40);
+		linkedList.print();
+	}
 
 	
 
