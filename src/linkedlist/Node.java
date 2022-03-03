@@ -1,13 +1,10 @@
-/**UC1 : PROBLEM STATEMENT
- * Lets create a simple Linked List of 56, 30 and 70
- *
- */
+
 package linkedlist;
 
 /*
  * Creation of Node with parameter 
  * data- to store the value
- * next- reference to next node
+ * next- pointer to next node
  */
 public class Node {
 	public int data;
