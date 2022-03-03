@@ -3,29 +3,18 @@
  *
  */
 package linkedlist;
+import java.util.Scanner;
 
 public class LinkedListMain {
 
-	/*
-	 * @param head - accepting head pointer of LinkedList to manipulate it
-     * @param data - accepting data to put it in linkedList
-     * @param tail - accepting last value of linked list i.e tail
-	 * @param temp - temporary saving the node as head for usage of while loop
-	 */
+	
 	public static void main(String[] args) {
-		System.out.println("Welcome to LinkedList Datastructure Program");
-		Node firstNode = new Node(56);
-		Node secondNode = new Node(30);
-		Node thirdNode = new Node(70);
-		Node head = firstNode;
-		firstNode.next = secondNode;
-		secondNode.next = thirdNode;
-		Node tail = thirdNode;
-
-		Node temp = head;
-		while (temp != null) {
-			System.out.println(temp.data);
-			temp = temp.next;
+		System.out.println("Welcome to linkedList DataStructure Program");
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter 1 to add the data at the start");
+		switch (scanner.nextInt()) {
+		case 1:
+			Operations.addDataAtStart();
 		}
 
 	}
