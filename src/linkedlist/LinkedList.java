@@ -34,5 +34,29 @@ public class LinkedList {
 
 		}
 	}
+	/*
+	 * Method append - to add nodes from last.
+	 * @param data - value stored in node.
+	 */
+	public void append(int data) {
+		Node newNode = new Node(data);
+		if (head == null) {
+			head = newNode;
+			tail = newNode;
+		} else {
+			this.tail.next = newNode;
+			tail = newNode;
+		}
+	}
+	/*
+	 * Method insertInBetween - Adds the nodes between any two given nodes.
+	 * @previousNode - shows prevoius of given node
+	 */
+
+	public void insertInBetween(Node previousNode, Node newNode) {
+		Node tempNode = previousNode.next;
+		previousNode.next = newNode;
+		newNode.next = tempNode;
+	}
 
 }
